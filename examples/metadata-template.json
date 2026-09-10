@@ -1,0 +1,27 @@
+{
+  "defaults": {
+    "title": "",
+    "artist": "Pink Floyd",
+    "album": "The Wall",
+    "albumartist": "Pink Floyd",
+    "genre": "Progressive Rock",
+    "year": "1979",
+    "track": "",
+    "track_total": "26",
+    "disc": "1",
+    "disc_total": "2",
+    "composer": "",
+    "comment": "Remastered",
+    "cover": "./cover.jpg"
+  },
+  "tracks": {
+    "01-in-the-flesh.mp3": {
+      "title": "In The Flesh?",
+      "track": "1"
+    },
+    "02-the-thin-ice.mp3": {
+      "title": "The Thin Ice",
+      "track": "2"
+    }
+  }
+}

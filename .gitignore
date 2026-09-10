@@ -1,0 +1,33 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.venv/
+venv/
+.env
+
+# Pytest / coverage
+.pytest_cache/
+.coverage
+htmlcov/
+coverage.xml
+
+# Linters / type checkers
+.ruff_cache/
+.mypy_cache/
+
+# OS / editors
+.DS_Store
+.vscode/
+.idea/
+*.swp
+
+# Project artifacts
+*.mp3
+*.wav
+*.flac
+!tests/**.mp3
+cover.jpg
+cover.png

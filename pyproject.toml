@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "metatune"
+version = "0.2.0"
+description = "MetaTune — batch MP3 (ID3) metadata editor with templates"
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [{ name = "Wesley Bertipaglia" }]
+dependencies = ["mutagen>=1.45"]
+
+[project.optional-dependencies]
+dev = ["pytest>=7.0", "ruff>=0.1"]
+
+[project.scripts]
+metatune = "metatune.cli:main"
+music-metadata = "metatune.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["metatune*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
+
+[tool.ruff]
+target-version = "py39"
