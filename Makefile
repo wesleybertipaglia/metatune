@@ -9,9 +9,6 @@ help: ## Show available targets
 install: ## Install runtime dependencies
 	$(PY) -m pip install -r requirements.txt
 
-dev: ## Install package in editable mode + dev tools
-	$(PY) -m pip install -e ".[dev]"
-
 test: ## Run test suite
 	$(PY) -m pytest -q
 

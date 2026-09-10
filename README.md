@@ -24,13 +24,18 @@ Supported fields: `title`, `artist`, `album`, `albumartist`, `genre`, `year`,
 ## Installation
 
 ```bash
+# venv
+python -m venv .venv
+source .venv/bin/activate
+
+
 # install
 make install
 # or
 pip install -r requirements.txt
 
-# development (editable install + pytest)
-make dev
+# run tests
+make test
 ```
 
 The package uses the `src/` layout (`src/metatune/`). After `make dev`
